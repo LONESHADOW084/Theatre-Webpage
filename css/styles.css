@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1vh 40vh 1fr;
+    grid-template-areas:
+    "nav nav nav nav nav nav"
+    ". showtimes showtimes showtimes showtimes ."
+    ". button button button button ."
+    ". movies movies movies movies ."
+    "contact-info contact-info contact-info contact-info contact-info Contact-info"
+}
+
+.navbar{
+    grid-area: nav;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+.hero-image-container {
+    width: 250%; 
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.movies-card{
+    padding: 1em;
+    margin: auto;
+}
